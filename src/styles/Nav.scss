@@ -1,0 +1,27 @@
+// styles/_nav.scss
+@import "./ColorFont";
+
+#categories {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  a {
+    flex: 1;
+    background-color: $dark-blue;
+    color: $white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $medium-blue;
+    }
+
+    &.active {
+      background-color: $white;
+      color: $dark-blue;
+    }
+  }
+}
