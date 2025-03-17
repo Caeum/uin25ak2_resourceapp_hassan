@@ -1,27 +1,32 @@
-// styles/_nav.scss
-@import "./ColorFont";
-
 #categories {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  background-color: var(--dark-blue);
+  padding: 20px;
+  
 
   a {
-    flex: 1;
-    background-color: $dark-blue;
-    color: $white;
-    text-align: center;
-    padding: 15px;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
+    
+    &.active {
+        background-color: var(--white);
+        color: var(--dark-blue);
+        border-bottom: none;
+    }
 
     &:hover {
-      background-color: $medium-blue;
-    }
-
-    &.active {
-      background-color: $white;
-      color: $dark-blue;
+      background-color: var(--medium-blue);
     }
   }
+}
+
+#content {
+    padding: 40px;
+}
+
+a {
+    color: var(--medium-blue);
 }

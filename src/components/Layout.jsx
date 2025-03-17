@@ -1,12 +1,14 @@
 import Nav from "./Nav";
-import "../styles/Layout.scss"
-import "../styles/ColorFont.scss"
 
+//Layout-komponenten fungerer som en wrapper for applikasjonen. 
+//Den sørger for at navigasjonsmenyen (Nav) alltid vises, og at alle undersider blir rendret inne i {children}.
+
+//Layout-en fungerer blir som et hovedoppsett for nettsiden plus navigasjonen.
 const Layout = ({ children }) => {
   return (
-    <main>
-      <Nav />
-      {children}
+  <main>
+    <Nav />
+    {children} {/*Children representerer innholdet som kommer fra Route-komponentene i App.jsx.*/}
     </main>
   );
 };
